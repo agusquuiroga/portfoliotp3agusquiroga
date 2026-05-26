@@ -1,0 +1,391 @@
+/* CSS DOCUMENT */
+@charset "UTF-8";
+
+/* fuentes */
+@font-face {
+    font-family: "EncodeSans Thin";
+    src: url("fonts/EncodeSans-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "EncodeSans Light";
+    src: url("fonts/EncodeSans-Light.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "EncodeSans Regular";
+    src: url("fonts/EncodeSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "EncodeSans Medium";
+    src: url("fonts/EncodeSans-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "EncodeSans Semibold";
+    src: url("fonts/EncodeSans-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "EncodeSans Bold";
+    src: url("fonts/EncodeSans-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* configuraciones generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fondo */
+
+body,
+html {
+    background-color: #000;
+    overflow-x: hidden;
+    /* Esto oculta cualquier cosa que intente desbordarse a los lados */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    width: 100vw;
+    /* Fuerza al hero a medir exactamente el ancho de la ventana */
+    overflow-x: hidden;
+    /* Corta cualquier excedente interno */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bold {
+    font-family: 'EncodeSans Bold';
+}
+
+.light {
+    font-family: 'EncodeSans Light';
+}
+
+/* header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    width: 100%;
+    /* Asegura que no sea más ancho que el hero */
+    max-width: 100vw;
+    /* Evita que se salga de la pantalla */
+    font-size: 8vw;
+    /* El tamaño se ajusta al ancho de la pantalla */
+    white-space: nowrap;
+    /* Mantiene el texto en una línea */
+    overflow: hidden;
+    /* Oculta lo que sobre si es muy largo */
+    text-overflow: ellipsis;
+    /* Opcional: agrega "..." si el texto es demasiado largo */
+}
+
+h2 {
+    font-size: 100px;
+}
+
+h3 {
+    font-size: 80px;
+}
+
+h4 {
+    font-size: 40px;
+}
+
+p {
+    color: #FFF0DF;
+    font-family: 'EncodeSans Regular', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 40px;
+}
+
+/* loguito pintha */
+.logopintha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logopintha p {
+    color: rgb(243, 165, 187);
+    font-size: 16px;
+}
+
+/*  nav */
+
+nav ul {
+    font-family: 'EncodeSans Regular', sans-serif;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul :hover {
+    display: flex;
+    gap: 30px;
+    color: rgb(243, 165, 187);
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* hero */
+
+
+/* Borramos cualquier margen por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* El Hero ahora es el dueño del espacio */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 702px;
+    background-image: url('img/pintha_hero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-bottom: 2px solid #ffb7c5;
+}
+
+
+.hero h1 {
+    color: #000 !important;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 180px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    white-space: nowrap;
+    line-height: 1;
+    transform: scale(1);
+    transform-origin: center;
+}
+
+.hero .light {
+    font-weight: 200;
+}
+
+/* --- SECCIÓN INTRODUCCIÓN Y TARJETA (FINAL) --- */
+
+.introduccion {
+    display: flex;
+    padding-right: 200px;
+    padding-left: 200px;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.intro-texto h2 {
+    color: #F3A5BB;
+    font-family: "EncodeSans Light", sans-serif;
+    font-size: 95px;
+    font-weight: 250;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-top: 150px;
+}
+
+.intro-texto {
+    display: inline-flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: flex-start;
+
+}
+
+.intro-texto p {
+    max-width: 600px;
+    margin: 0;
+    line-height: 1.1;
+    color: #F3A5BB;
+    font-family: "Encode Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 250;
+}
+
+/* --- TARJETA DERECHA (¡HOLA!) (Correcta) --- */
+.tarjeta-saludo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 658px;
+    height: 404px;
+    padding: 50px 40px 80px 80px;
+    box-sizing: border-box;
+    border-radius: 60px;
+    border: 3px solid #F3A5BB;
+    gap: 5px;
+    margin-top: 100px;
+}
+
+.tarjeta-saludo h3 {
+    font-family: 'EncodeSans Bold';
+    color: #F3A5BB;
+}
+
+/* Ajuste fino para el texto */
+.tarjeta-saludo p {
+    color: #FFF0DF;
+    font-family: "Encode Sans";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 47px;
+
+}
+
+.Agus {
+    color: #FFF0DF;
+    font-family: "EncodeSans Bold", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 47px;
+}
+
+.ticker-p {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ticker-p-inner {
+    display: inline-block;
+    animation: ticker 12s linear infinite;
+    font-family: 'EncodeSans Bold', sans-serif;
+    font-size: 50px;
+    color: var(--pink);
+    margin: 150px;
+    letter-spacing: 0.1rem;
+}
+
+@keyframes ticker {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+:root {
+    color: #F3A5BB;
+}
+
+/* Contenedor principal que controla el margen lateral de 150px */
+.seccion-presentacion {
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px; /* Aquí aplicas el padding de Figma */
+    width: 100%;
+    box-sizing: border-box; /* ¡Fundamental para que no se desborde! */
+    gap: 40px; /* Espacio entre el título y el párrafo */
+}
+
+/* Estilo para "¿QUIÉN ES" */
+.cajitanombre span:first-child {
+    color: #FFF0DF;
+    font-size: 100px;
+    font-weight: 300;
+    line-height: 147px;
+    font-family: "Encode Sans", sans-serif;
+}
+
+/* Estilo para ":PINTHA?" */
+.cajitanombre span:last-child {
+    color: #FFF0DF;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 147px;
+    font-family: "Encode Sans", sans-serif;
+}
+
+/* Estilo para el párrafo */
+.presentaciónpintha p {
+    color: #FFF0DF;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 55px;
+    font-family: "Encode Sans", sans-serif;
+    margin: 0;
+    max-width: 800px; /* Controla el ancho máximo del texto */
+}
+
+/* Caja contenedor del ticker */
+/* Caja contenedor del ticker */
+.proyectos-ticker {
+    width: 100%;             /* Ocupa todo el ancho */
+    overflow: hidden;        /* Esconde lo que sobra */
+    padding: 15px 150px;     /* ¡Acá está el truco! */
+    box-sizing: border-box;  /* Esto hace que los 150px se resten del ancho, no que se sumen */
+    display: flex;
+    white-space: nowrap;
+    border-top: 2px solid #F3A5BB;
+    border-bottom: 2px solid #F3A5BB;
+    margin-top: 150px;
+    /* BORRAMOS EL MARGIN: margin: 150px; ya no existe */
+}
+
+/* Contenedor interno que se mueve */
+.proyectos-ticker-inner {
+    display: flex;
+    animation: marquee 15s linear infinite; /* Tiempo de la animación */
+}
+
+/* Estilo del texto */
+.ticker-content {
+    color: #F3A5BB;
+    font-size: 48px;
+    font-family: 'EncodeSans Medium', sans-serif;
+    font-weight: 600;
+    padding-right: 50px; /* Espacio entre el primer y segundo bloque */
+}
+
+/* La animación que hace que se desplace */
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
