@@ -1,0 +1,3 @@
+Mi CV Web - Portfolio Personal
+
+Este proyecto consiste en el desarrollo de mi Portfolio profesional en formato de página web. El objetivo es presentar mi perfil como diseñadora de una manera interactiva, clara y moderna. El proyecto está realizado en Visual Code, con una estructura de HTML5 y CSS con su correspondiente prototipado en Figma. Este mismo presenta un Head, Body y Footer con sus respectivas etiquetas dentro para que el armado de la página sea semánticamente correcta y en CSS, se utilizó la herramienta Flexbox. La resolución de pantalla en donde se realizó este trabajo es de 1920x1080.
