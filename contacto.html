@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8" />
@@ -9,28 +9,85 @@
 </head>
 
 <body>
+    <header>
+        <div class="logopintha">
+            <a href="index.html">
+                <img src="img/logo_negro_p_rosa.svg" alt="Logo Pintha" width="30px" height="30px" />
+                <p>
+                    <span class="light">AGUS</span>
+                    <span class="bold">PINTHA</span>
+                </p>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="sobremi.html">SOBRE MÍ</a></li>
+                <li><a href="proyectos.html">PROYECTOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seccion-contacto">
+            <div class="lado-visual">
+                <img src="img/contactoimg/contacto.jpg" alt="imagen de contacto" class="imagen-contacto">
+            </div>
+
+            <div class="lado-formulario">
+                <div class="cabecera-contacto">
+                    <p class="subtitulo-contacto">Si te gustó mi trabajo,</p>
+                    <h2 class="titulo-contacto">CONTACTAME!</h2>
+                </div>
+
+                <form class="formulario-contacto">
+                    <div class="item">
+                        <label>Nombre*</label>
+                        <input type="text" name="nombre" required>
+                    </div>
+
+                    <div class="item">
+                        <label>Apellido*</label>
+                        <input type="text" name="apellido" required>
+                    </div>
+
+                    <div class="item">
+                        <label>Mail*</label>
+                        <input type="email" name="mail" required>
+                    </div>
+
+                    <div class="item">
+                        <label>Mensaje*</label>
+                        <textarea name="mensaje" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="boton-enviar">ENVIAR</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer-pintha">
-        <img src="img/pintha_footer.jpg" alt="footerfondo" class="footer-background">
+        <img src="img/indeximg/pintha_footer.jpg" alt="" class="footer-background">
+
         <div class="footer-content">
             <div class="footer-texto">
-                <span class="subtitulo">
-                    <span class="pinthabold">PINTHA</span> TE DICE </span>
-                <h1 class="titulo-gracias">GRACIAS :)</h1>
+                <span class="subtitulo"><span class="pinthabold">pintha</span> te dice </span>
+                <h2 class="titulo-gracias">gracias*</h2>
             </div>
 
             <div class="menu-container">
                 <div class="columna">
-                    <span class="header">MENÚ</span>
-                    <a href="#">INICIO</a>
-                    <a href="#">SOBRE MÍ</a>
-                    <a href="#">PROYECTOS</a>
-                    <a href="#">CONTACTO</a>
+                    <span class="header">menú</span>
+                    <a href="index.html">inicio</a>
+                    <a href="sobremi.html">sobre mí</a>
+                    <a href="proyectos.html">proyectos</a>
+                    <a href="contacto.html">contacto</a>
                 </div>
                 <div class="columna">
-                    <span class="header">REDES</span>
-                    <a href="#">BEHANCE</a>
-                    <a href="#">INSTAGRAM</a>
-                    <a href="#">LINKEDIN</a>
+                    <span class="header">redes</span>
+                    <a href="#">behance</a>
+                    <a href="#">instagram</a>
+                    <a href="#">linkedin</a>
                 </div>
             </div>
         </div>
