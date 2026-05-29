@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="logopintha">
-            <img src="img/logo_negro_p_rosa.svg" alt="Logo Pintha" width="22px" height="22px">
+            <img src="img/logo_negro_p_rosa.svg" alt="Logo Pintha" width="30px" height="30px">
             <p>
                 <span class="light">AGUS</span>
                 <span class="bold">PINTHA</span>
@@ -19,9 +19,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">INICIO</a></li>
                 <li><a href="#">SOBRE MÍ</a></li>
-                <li><a href="#">PROYECTOS</a></li>
+                <li><a href="proyectos.html">PROYECTOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -59,7 +59,7 @@
                 <div class="presentaciónpintha">
                     <p>
                         Pintha era el nombre que le puse mi amiga imaginaria de chiquita. En este afán de elegir un
-                        nombre y no saber cuál, Pintha apareció en mi mente y fue intantáneo, dije: sí, es ese. Vino a
+                        nombre y no saber cuál, Pintha apareció en mi mente y fue instantáneo, dije: sí, es ese. Vino a
                         mi presente en forma de “alter ego” de diseño, conectando mi yo pequeña que dibujaba sin parar y
                         pegaba los dibujitos en las paredes, con la Agustina actual, enamorada del diseño editorial.
                     </p>
@@ -76,45 +76,71 @@
         </div>
         <section class="proyectos">
             <div class="bloquesitos">
-                <article class="bloque1">
-                    <h4>:PINTHA</h4>
+
+                <article class="card1">
+                    <img src="img/pintha pintha.jpg" alt="Proyecto :PINTHA">
+                    <div class="info-proyecto">
+                        <h4 class="titulo-proyecto">:PINTHA</h4>
+                        <p class="categoria-proyecto">FANZINE</p>
+                    </div>
                 </article>
-                <article class="bloque2">
-                    <h4>ESTACIÓN RECITAL</h4>
+
+                <article class="card2">
+                    <img src="img/estacion recital.jpg" alt="Estación Recital">
+                    <div class="info-proyecto">
+                        <h4 class="titulo-proyecto">ESTACIÓN RECITAL</h4>
+                        <p class="categoria-proyecto">AUTOEDICIÓN</p>
+                    </div>
                 </article>
-                <article class="bloque3">
-                    <h4>COLECCIÓN MUJERES</h4>
+
+                <article class="card3">
+                    <img src="img/colección mujeres.jpg" alt="Colección Mujeres">
+                    <div class="info-proyecto">
+                        <h4 class="titulo-proyecto">COLECCIÓN: MUJERES</h4>
+                        <p class="categoria-proyecto">LIBROS</p>
+                    </div>
                 </article>
-                <article class="bloque4">
-                    <h4>DSB LAD</h4>
+
+                <article class="card4">
+                    <img src="img/portada lad.jpg" alt="DSB LAD">
+                    <div class="info-proyecto">
+                        <h4 class="titulo-proyecto">DSB LAD</h4>
+                        <p class="categoria-proyecto">REVISTA DE DIVULGACIÓN</p>
+                    </div>
                 </article>
             </div>
-        </section>
-        <button class="btn-proyectos">VER MÁS PROYECTOS</button>
+            <div class="contenedor-boton">
+                <a href="#" class="botonproyectos">
+                    <span>+</span> PROYECTOS
+                </a>
+            </div>
         </section>
     </main>
 
-    <footer id="footer">
-        <div class="footer-container">
-            <div class="footer-menu">
-                <h4>MENU</h4>
-                <ul>
-                    <li><a href="#">SOBRE MÍ</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-                    <li><a href="#">PROYECTOS</a></li>
-                </ul>
+    <footer class="footer-pintha">
+        <img src="img/pintha_footer.jpg" alt="footerfondo" class="footer-background">
+        <div class="footer-content">
+            <div class="footer-texto">
+                <span class="subtitulo">
+                    <span class="pinthabold">PINTHA</span> TE DICE </span>
+                <h1 class="titulo-gracias">GRACIAS :)</h1>
             </div>
-            <div class="footer-social">
-                <h4>REDES</h4>
-                <ul>
-                    <li><a href="#">INSTAGRAM</a></li>
-                    <li><a href="#">LINKEDIN</a></li>
-                    <li><a href="#">BEHANCE</a></li>
-                </ul>
+
+            <div class="menu-container">
+                <div class="columna">
+                    <span class="header">MENÚ</span>
+                    <a href="#">INICIO</a>
+                    <a href="#">SOBRE MÍ</a>
+                    <a href="#">PROYECTOS</a>
+                    <a href="#">CONTACTO</a>
+                </div>
+                <div class="columna">
+                    <span class="header">REDES</span>
+                    <a href="#">BEHANCE</a>
+                    <a href="#">INSTAGRAM</a>
+                    <a href="#">LINKEDIN</a>
+                </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>PINTHA TE DICE GRACIAS :)</p>
         </div>
     </footer>
 
