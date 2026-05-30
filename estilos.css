@@ -58,10 +58,10 @@
 body,
 html {
     background-color: #000;
-    overflow-x: hidden;
+    overflow-x: hidden; /* por qué tiene esto el body?*/
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0; /* estos ya los declaraste en el selector universal, no repitas!! */
 }
 
 .hero {
@@ -69,7 +69,7 @@ html {
     overflow-x: hidden;
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0; /* no repitas!!! */
 }
 
 .bold {
@@ -86,7 +86,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
-    margin-top: 20px;
+    margin-top: 20px; /* unificá los margins */
     margin-bottom: 20px;
 }
 
@@ -162,12 +162,12 @@ nav a {
     box-sizing: border-box;
 }
 
-.hero {
+.hero { /* guarda que ya definiste cosas de hero en la 67 */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 702px;
+    width: 100vw; /* para los anchos es mejor usar porcentajes porque en algunos navegadores tienen comportamientos extraños */
+    height: 702px; /* no están buenos los tamaños fijos de las etiquetas porque después no se puede wrapear bien */
     background-image: url('img/pintha_hero.jpg');
     background-position: center;
     background-size: cover;
@@ -180,11 +180,11 @@ nav a {
     color: #000 !important;
     font-family: 'Encode Sans', sans-serif;
     font-size: 180px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 700; /* no está funcionando */
+    text-transform: uppercase; 
     text-align: center;
     font-weight: 700;
-    white-space: nowrap;
+    white-space: nowrap; /* esta propiedad está jugando en contra porque en una pantalla apenas pequeña aparecen puntos suspensivos en el título, es mejor usar white-space:pre-wrap; para que baje la línea */
     line-height: 1;
     transform: scale(1);
     transform-origin: center;
@@ -196,7 +196,7 @@ nav a {
 
 .introduccion {
     display: flex;
-    padding-right: 200px;
+    padding-right: 200px; /* paddings muy grandes!!! */
     padding-left: 200px;
     align-items: center;
     gap: 50px;
@@ -214,7 +214,7 @@ nav a {
 }
 
 .intro-texto {
-    display: inline-flex;
+    display: inline-flex; /* mmmm raro, qué pasa si nada de esto está? */
     flex-direction: column;
     width: fit-content;
     align-items: flex-start;
@@ -234,8 +234,8 @@ nav a {
 .tarjeta-saludo {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 658px;
+    align-items: flex-start; /* mmmm */
+    width: 658px; /* qué dijimos de las medidas fijas? */
     height: 404px;
     padding: 50px 40px 80px 80px;
     box-sizing: border-box;
@@ -252,7 +252,7 @@ nav a {
 
 .tarjeta-saludo p {
     color: #FFF0DF;
-    font-family: "Encode Sans";
+    font-family: "Encode Sans"; /* no está funcionando esta font porque no existe ninguna llamada exactamente así, de todos modos ya habías establecido esta font en la 114 */
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -303,7 +303,7 @@ nav a {
     flex-direction: column;
     padding-left: 200px;
     width: 100%;
-    box-sizing: border-box;
+    box-sizing: border-box; /* no repitas!! */
     gap: 40px;
 }
 
@@ -375,9 +375,9 @@ nav a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 88px;
-    padding: 0 150px;
+    padding: 0 150px; /* paddings muy grande!!! */
     box-sizing: border-box;
-    margin-top: 150px;
+    margin-top: 150px; /* margin muy grande!!! */
 }
 
 .card1,
@@ -484,11 +484,11 @@ nav a {
 
 
 .footer-pintha {
-    position: relative;
-    padding: 100px 150px;
+    position: relative; /* es necesario? */
+    padding: 100px 150px; /* muy grande!!! */
     width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
+    box-sizing: border-box; /* no repitas!!! */
+    overflow: hidden; /* por qué? */
     min-height: 400px;
     border-top: 2px solid #000;
 }
