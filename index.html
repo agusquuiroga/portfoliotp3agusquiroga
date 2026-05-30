@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <div class="logopintha">
+        <div class="logopintha"> <!-- sería conveniente es que esto sea una etiqueta <a> en todos los html para que sea fácil y accesible volver al index -->
             <img src="img/logo_negro_p_rosa.svg" alt="Logo Pintha" width="30px" height="30px">
             <p>
                 <span class="light">AGUS</span>
@@ -28,12 +28,12 @@
 
     <main>
         <section class="hero">
-            <h1>:PINTHA <span class="light">TIENE</span> PINTA</h1>
+            <h1>:PINTHA <span class="light">TIENE</span> PINTA</h1> <!-- a nivel accesibilidad no es bueno escribir los textos en mayúscula porque se toman como siglas por los lectores de pantalla para personas que usan el asistente por problemas en la visión (acá se va a leer pe i ene te hache a te i e ene e pe i ene te a), por eso es mejor escribir en minúsculas pero que tenga la apariencia en mayus con text-transform: uppercase; --> 
         </section>
 
         <section class="introduccion">
             <div class="intro-texto">
-                <h2>LE TEME A LA OSCURIDAD <br> POR ESO PINTA <br> CON COLORES*</h2>
+                <h2>LE TEME A LA OSCURIDAD <br> POR ESO PINTA <br> CON COLORES*</h2> <!-- misma corrección de accesibilidad -->
                 <p>(su favvv es el rosa :p)</p>
             </div>
             <div class="tarjeta-saludo">
@@ -53,10 +53,10 @@
             </div>
             <section class="seccion-presentacion">
                 <div class="cajitanombre">
-                    <span>¿QUIÉN ES<br></span>
+                    <span>¿QUIÉN ES<br></span> <!-- misma corrección de accesibilidad -->
                     <span>:PINTHA?</span>
                 </div>
-                <div class="presentaciónpintha">
+                <div class="presentaciónpintha"> <!-- no se usan carácteres especiales en html!!! además, este div está de más, si lo sacás no genera cambios -->
                     <p>
                         Pintha era el nombre que le puse mi amiga imaginaria de chiquita. En este afán de elegir un
                         nombre y no saber cuál, Pintha apareció en mi mente y fue instantáneo, dije: sí, es ese. Vino a
@@ -70,17 +70,17 @@
             <div class="proyectos-ticker-inner">
                 <div class="ticker-content">
                     ✦ PROYECTOS ✦ PROYECTOS ✦ PROYECTOS ✦ PROYECTOS ✦ PROYECTOS ✦ PROYECTOS ✦ PROYECTOS ✦ PROYECTOS ✦
-                    PROYECTOS ✦ PROYECTOS ✦ PROYECTOS ✦ PROYECTOS ✦ PROYECTOS ✦ PROYECTOS ✦ PROYECTOS ✦ PROYECTOS ✦
-                </div>
+                    PROYECTOS ✦ PROYECTOS ✦ PROYECTOS ✦ PROYECTOS ✦ PROYECTOS ✦ PROYECTOS ✦ PROYECTOS ✦ PROYECTOS ✦ 
+                </div> <!-- misma corrección de accesibilidad -->
             </div>
         </div>
         <section class="proyectos">
             <div class="bloquesitos">
 
-                <article class="card1">
+                <article class="card1"> <!-- mmm si tan sólo tuviésemos una etiqueta para una imagen con una descripción... -->
                     <img src="img/pintha pintha.jpg" alt="Proyecto :PINTHA">
                     <div class="info-proyecto">
-                        <h4 class="titulo-proyecto">:PINTHA</h4>
+                        <h4 class="titulo-proyecto">:PINTHA</h4> <!-- misma corrección de accesibilidad -->
                         <p class="categoria-proyecto">FANZINE</p>
                     </div>
                 </article>
@@ -88,7 +88,7 @@
                 <article class="card2">
                     <img src="img/estacion recital.jpg" alt="Estación Recital">
                     <div class="info-proyecto">
-                        <h4 class="titulo-proyecto">ESTACIÓN RECITAL</h4>
+                        <h4 class="titulo-proyecto">ESTACIÓN RECITAL</h4> <!-- misma corrección de accesibilidad -->
                         <p class="categoria-proyecto">AUTOEDICIÓN</p>
                     </div>
                 </article>
@@ -96,46 +96,46 @@
                 <article class="card3">
                     <img src="img/colección mujeres.jpg" alt="Colección Mujeres">
                     <div class="info-proyecto">
-                        <h4 class="titulo-proyecto">COLECCIÓN: MUJERES</h4>
+                        <h4 class="titulo-proyecto">COLECCIÓN: MUJERES</h4> <!-- misma corrección de accesibilidad -->
                         <p class="categoria-proyecto">LIBROS</p>
                     </div>
                 </article>
 
                 <article class="card4">
-                    <img src="img/portada lad.jpg" alt="DSB LAD">
+                    <img src="img/portada lad.jpg" alt="DSB LAD"> <!-- acá la accesibilidad está bien porque en este caso DSB LAD es una sigla, aunque completaría con la explicación de lo que es el lad en la parte del lector -->
                     <div class="info-proyecto">
-                        <h4 class="titulo-proyecto">DSB LAD</h4>
+                        <h4 class="titulo-proyecto">DSB LAD</h4> <!-- misma corrección de accesibilidad -->
                         <p class="categoria-proyecto">REVISTA DE DIVULGACIÓN</p>
                     </div>
                 </article>
             </div>
             <div class="contenedor-boton">
                 <a href="#" class="botonproyectos">
-                    <span>+</span> PROYECTOS
+                    <span>+</span> PROYECTOS <!-- misma corrección de accesibilidad -->
                 </a>
             </div>
         </section>
     </main>
 
     <footer class="footer-pintha">
-        <img src="img/pintha_footer.jpg" alt="footerfondo" class="footer-background">
+        <img src="img/pintha_footer.jpg" alt="footerfondo" class="footer-background"> <!-- por qué esta imagen no está como bg desde css? además, el tamaño que tiene es demasiado grande para lo que se termina mostrando -->
         <div class="footer-content">
             <div class="footer-texto">
                 <span class="subtitulo">
                     <span class="pinthabold">PINTHA</span> TE DICE </span>
-                <h1 class="titulo-gracias">GRACIAS :)</h1>
+                <h1 class="titulo-gracias">GRACIAS :)</h1> <!-- misma corrección de accesibilidad -->
             </div>
 
             <div class="menu-container">
-                <div class="columna">
-                    <span class="header">MENÚ</span>
+                <div class="columna"> 
+                    <span class="header">MENÚ</span> <!-- misma corrección de accesibilidad -->
                     <a href="#">INICIO</a>
                     <a href="#">SOBRE MÍ</a>
                     <a href="#">PROYECTOS</a>
                     <a href="#">CONTACTO</a>
                 </div>
                 <div class="columna">
-                    <span class="header">REDES</span>
+                    <span class="header">REDES</span> <!-- misma corrección de accesibilidad -->
                     <a href="#">BEHANCE</a>
                     <a href="#">INSTAGRAM</a>
                     <a href="#">LINKEDIN</a>
